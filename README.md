@@ -9,7 +9,7 @@ A simplest file server.
 # To run locally
 ### 1. Create `./.env` file
 ```bash
-# User your configs
+# Use your configs
 
 # Django
 DEBUG=
