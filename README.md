@@ -3,7 +3,8 @@ django app to upload file to azure blob storage with celery and  redis as broker
 
 A simplest file server.
 
-![Screenshot from 2023-06-23 22-23-01](https://github.com/deshrit/celery_azure_blob/assets/59757711/07e1a155-923b-4be2-8f8e-99c07ec96902)
+![Screenshot from 2023-06-23 22-23-01](https://github.com/deshrit/celery_azure_blob/assets/59757711/288248f7-7edd-4be5-8170-9478ace208f9)
+
 
 # To run locally
 ### 1. Create `./.env` file
