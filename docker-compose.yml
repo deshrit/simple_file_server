@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+
+
+  server:
+    build: .
+    ports:
+      - 8008:8008
+    env_file:
+      - ./.env
+    depends_on:
+      - redis
+    volumes:
+      - vol:/celery_azure_blob/vol
+
+  redis:
+    image: redis:7.0.11-bookworm
+    expose:
+      - 6379
+
+
+  celery:
+    build: .
+    command: celery -A core worker -l INFO
+    env_file:
+      - ./.env
+    depends_on:
+    - redis
+    - server
+    volumes:
+      - vol:/celery_azure_blob/vol
+
+
+volumes:
+  vol:
+  db:

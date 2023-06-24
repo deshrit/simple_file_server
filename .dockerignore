@@ -1,0 +1,8 @@
+.env
+.venv/
+vol/
+
+__pycache__/
+/celery_azure_blob/__pycache__
+
+dump.rdb
