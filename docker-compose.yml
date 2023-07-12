@@ -1,7 +1,6 @@
 version: '3.8'
 services:
 
-
   server:
     build: .
     ports:
@@ -17,7 +16,6 @@ services:
     image: redis:7.0.11-bookworm
     expose:
       - 6379
-
 
   celery:
     build: .
