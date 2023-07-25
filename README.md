@@ -1,4 +1,4 @@
-# celery_azure_blob
+# simple_file_server
 django app to upload file to azure blob storage with celery and  redis as broker.
 
 A simplest file server.
