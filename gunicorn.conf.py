@@ -1,3 +1,5 @@
+"""gunicorn configuration"""
+
 bind = "0.0.0.0:8008"
 accesslog = '-'
 errorlog = '-'
